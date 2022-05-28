@@ -1,0 +1,84 @@
+html,
+body {
+    background-color: #efefef;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+
+}
+
+.wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    margin: 0 auto;
+
+    /* CHANGE WIDTH HERE */
+    width: 1300px;
+    max-width: 95%;
+}
+
+.aspect {
+    padding-bottom: 0%;
+    height: 100%;
+    position: relative;
+    width: 100%;
+
+}
+
+.aspect-inner {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    /* padding: 5%; */
+}
+
+.flipbook {
+    /* CHANGE HEIGHT HERE */
+    height: 900px;
+    max-height: 95%;
+
+    transition: margin-left 0.5s ease-in-out;
+    width: 100%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    /* border-radius: 35px;
+    overflow: hidden; */
+}
+
+/* .flipbook .page {
+    height: 100%;
+    width: 100%;
+} */
+
+.flipbook .page img {
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+img {
+    /* object-fit: scale-down; */
+    /* DO NOT USE : contain , scale-down*/
+}
+
+/* .flipbook .shadow {
+    -webkit-box-shadow: 0 0 20px 0 rgb(87, 87, 87);
+    box-shadow: 0 0 20px 0 rgb(87, 87, 87);
+} */
